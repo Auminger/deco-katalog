@@ -1,0 +1,12 @@
+- id: 1
+  name: Produkt 1
+  description: Beschreibung 1
+  price: 10
+  images:
+    - /assets/img1.jpg
+- id: 2
+  name: Produkt 2
+  description: Beschreibung 2
+  price: 20
+  images:
+    - /assets/img2.jpg
