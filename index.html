@@ -1,0 +1,18 @@
+---
+layout: default
+title: Produktkatalog
+---
+
+<h1>Produktkatalog</h1>
+<div id="product-list">
+  {% for product in site.data.products %}
+    <div class="product">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <p>Preis: {{ product.price }}€</p>
+      {% for image in product.images %}
+        <img src="{{ image }}" alt="{{ product.name }}">
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
